@@ -25,7 +25,10 @@ java -cp PocForOneCom-1.0-SNAPSHOT-tests.jar;PocForOneCom-1.0-SNAPSHOT.jar;libs\
 -Dwebdriver.baseUrl=https://www.saucedemo.com/ -Dwebdriver.remote=false -Dwebdriver.capabilities.browserName=chrome
 org.testng.TestNG ../TestNG-XML-Suites/Smoke/SmokeTestSuite.xml
 
-##Postman Collection
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Postman Collection
 Postman collection is available here : (/PostmanCollection)
 
 Import the collection in Postman and use the collection runner to run the entire collection.
@@ -34,8 +37,13 @@ Scope :
 All PET API endpoints
 ![img.png](document/img.png)
 
-##Updated on the current project
-- Fixed login tests and all are passing.
+## Updated on the current project
+- Fixed login tests and added more negative scenarios to LoginTestSuite.xml all are passing.
+![image](https://user-images.githubusercontent.com/95953783/181794469-5ff2b8c2-d291-4a23-a87c-3a8864385679.png)
+
 - Added sorting tests for main page.
-- Added new class file and test for add to cart.
+![image](https://user-images.githubusercontent.com/95953783/181794674-c49b7089-ba53-41a1-a23e-7370c2dedf01.png)
+
+- Added new class file and test for product to cart and checkout
+![image](https://user-images.githubusercontent.com/95953783/181794759-2270ec6e-4069-453a-887c-0f2d08a360bc.png)
 
