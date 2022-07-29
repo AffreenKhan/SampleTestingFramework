@@ -50,6 +50,34 @@
             <class name="com.one.LoginTest"/>
         </classes>
     </test>
+    <test name="LoginTestForNullPassword">
+        <parameter name="username" value="standard_user"/>
+        <parameter name="password" value=""/>
+        <parameter name="message" value="Password is required"/>
+        <groups>
+            <run>
+                <include name="invalid"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.one.LoginTest"/>
+        </classes>
+    </test>
+    <test name="LoginTestForNullUsername">
+        <parameter name="username" value=""/>
+        <parameter name="password" value="secret_sauce"/>
+        <parameter name="message" value="Username is required"/>
+        <groups>
+            <run>
+                <include name="invalid"/>
+
+            </run>
+        </groups>
+        <classes>
+            <class name="com.one.LoginTest"/>
+        </classes>
+    </test>
     <test name="LoginSmokeTestPerformanceIssues">
         <parameter name="username" value="performance_glitch_user"/>
         <parameter name="password" value="secret_sauce"/>
